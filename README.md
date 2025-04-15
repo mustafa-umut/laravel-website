@@ -29,6 +29,67 @@ You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
+## Project Setup
+
+### Prerequisites
+
+Ensure you have the following installed on your system:
+
+- [PHP](https://www.php.net/) >= 8.0
+- [Composer](https://getcomposer.org/)
+- [Node.js](https://nodejs.org/) >= 14.x and npm
+- A database system (e.g., MySQL, PostgreSQL, SQLite)
+
+### Installation Steps
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd laravel-website
+   ```
+
+2. Install PHP dependencies:
+   ```bash
+   composer install
+   ```
+
+3. Install JavaScript dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Copy the `.env.example` file to `.env` and configure your environment variables:
+   ```bash
+   cp .env.example .env
+   ```
+
+5. Generate the application key:
+   ```bash
+   php artisan key:generate
+   ```
+
+6. Run database migrations:
+   ```bash
+   php artisan migrate
+   ```
+
+7. (Optional) Seed the database:
+   ```bash
+   php artisan db:seed
+   ```
+
+8. Start the development server:
+   ```bash
+   php artisan serve
+   ```
+
+9. Compile assets:
+   ```bash
+   npm run dev
+   ```
+
+Your Laravel application should now be running at `http://localhost:8000`.
+
 ## Laravel Sponsors
 
 We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
